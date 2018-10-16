@@ -13,7 +13,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        ln=findViewById(R.id.ln2);
+        ln=findViewById(R.id.ln3);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -24,8 +24,17 @@ public class Main2Activity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         String oper = item.getTitle().toString();
-        if (oper.equals("Red")) {
+        if (oper.equals("Green")) {
             ln.setBackgroundColor(Color.GREEN);
+        }
+        if (oper.equals ("Red")) {
+            ln.setBackgroundColor(Color.RED);
+        }
+        if (oper.equals("Yellow")) {
+            ln.setBackgroundColor(Color.YELLOW);
+        }
+        if (oper.equals("Black")) {
+            ln.setBackgroundColor(Color.BLACK);
         }
         return true;
     }
